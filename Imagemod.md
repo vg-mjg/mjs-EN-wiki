@@ -55,8 +55,9 @@ This page will teach you how to insert a new cahracter into [MJS+](https://githu
 
 ## Mod
 - **Just change a premade mod and you're done**
+- Seriously, do it
 ---
-## 四、完成收尾
+## Final
 - Open [MJS+](https://github.com/MajsoulPlus/majsoul-plus) and check it.
    ![完成](https://github.com/MajsoulPlus/majsoul-plus-wiki/blob/master/imagemod_pics/11.png?raw=true)
 
