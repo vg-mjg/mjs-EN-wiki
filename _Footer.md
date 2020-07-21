@@ -1,5 +1,2 @@
-### MJS+ Wiki
-
+### MJS+ translated wiki
 [Original here](https://github.com/MajsoulPlus/majsoul-plus-wiki)
-[/mjg/ repo here](https://repo.riichi.moe/)
-
