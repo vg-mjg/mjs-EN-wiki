@@ -6,7 +6,7 @@ A dedicated Mahjong Soul PC browser.
 
 This wiki contains lots of contents referring to MJS+ v1.x (not in development anymore), refer to MJS+ v2.x pages for extension-related contents.
 
-## 简介
+## Description
 
 MJS+, based on Electron, is an open source, cross-platform browser for Mahjong Soul game. The browsing behaviour of Electron is the same as Chrome's. Basic functions include the support of various plug-ins and local cache.
 
