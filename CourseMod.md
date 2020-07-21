@@ -37,8 +37,8 @@ This page will teach you about mods for [MJS+](https://github.com/MajsoulPlus/ma
   "description": "Replace hags with emperors. If you can find the missing yaku, say in thread.",        description
   "preview": "preview.png", preview image
   "resourcepack": [
-    "extendRes/charactor/erjietang/bighead.png",  file 1 to replace
-    "extendRes/charactor/erjietang/full.png"      file 2 to replace
+    "extendRes/charactor/erjietang/bighead.png",  files to replace
+    "extendRes/charactor/erjietang/full.png"    
   ],
   "entry": "script.js"      script to run
 
