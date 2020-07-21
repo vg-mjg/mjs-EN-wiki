@@ -59,3 +59,4 @@ Read this to [get started](https://github.com/watterle/mjs-EN-wiki/wiki/QuickSta
 
 - [Shortcuts](https://github.com/MajsoulPlus/majsoul-plus-client/wiki/Shortcuts)
 - [FAQ](https://github.com/MajsoulPlus/majsoul-plus-client/wiki/FAQ)
+
