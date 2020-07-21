@@ -2,7 +2,7 @@
 
 ## Why did a mod installation fail？
 
-1. Check the file extension is one of `*.mspm`、`*.mspe`、`*.mspt`
+1. Check the file extension is one of `*.mspm`,`*.mspe`,`*.mspt`
 2. Check there are only english characters in the name
 3. Check that name isn't too long
 
