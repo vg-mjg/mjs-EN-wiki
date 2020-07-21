@@ -1,2 +1,2 @@
 # mjs-EN-wiki
-transaltion of majsoul plus wiki
+translation of majsoul plus wiki
