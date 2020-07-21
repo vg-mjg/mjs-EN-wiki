@@ -6,7 +6,7 @@
 | Fullscreen       | `F5` / `F11`                                         |
 | Exit Fullscreen   | `Esc`                                                |
 | Stay on top   | `Cmd+T` (macOS) / `Ctrl+T` (Windows / Linux)         |
-| Logout     | `Alt+X`                                              |
+| Boss key     | `Alt+X`                                              |
 | Close   | `Alt+F4`                                             |
 | Developer tools | `Cmd+I` (macOS) / `Ctrl+I` (Windows / Linux)         |
 
