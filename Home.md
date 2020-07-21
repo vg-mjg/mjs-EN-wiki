@@ -51,7 +51,7 @@ Following are the default v1.12.0 mods.
 MJS+ includes an automatic update check. You can enable the release type in "Settings"->"Update".
 To update you can redownload from GitHub and overwrite the folder.
 
-## 快速上手
+## Quickstart
 
 Read this to [get started](https://github.com/watterle/mjs-EN-wiki/wiki/QuickStart)
 
