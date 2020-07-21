@@ -30,8 +30,6 @@ This page will teach you about mods for [MJS+](https://github.com/MajsoulPlus/ma
 2. In the mod folder, create a `extension.json` or `resourcepack.json` ：
 
 ```json
-{
-{
   "id": "washizu",          folder name
   "version": "2.0.0",       version number
   "name": "Washizu",        mod name
@@ -43,8 +41,7 @@ This page will teach you about mods for [MJS+](https://github.com/MajsoulPlus/ma
     "extendRes/charactor/erjietang/full.png"      file 2 to replace
   ],
   "entry": "script.js"      script to run
-}
-}
+
 ```
 
 3. Default media folder is `assets`
