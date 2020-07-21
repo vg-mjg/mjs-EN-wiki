@@ -17,7 +17,7 @@ export interface Extension extends Metadata {
 | entry          | `string | string[]`                        | `script.js` | Run the js code.                                 |
 | loadBeforeGame | `boolean`                                  | `false`     | Run before the game                           |
 | applyServer    | `number[]`                                 | `[0, 1, 2]` | Which server is to be run. 0 China，1 Japan，2 EN |
-| resourcepack   | `Array<string | ResourcePackReplaceEntry>` | `[]`        | Replaces files like a resourcepack      |
+| resourcepack   | `Array<string | ResourcePackReplaceEntry>` | `nothing`        | Replaces files like a resourcepack      |
 
 ## Node compatible？
 tl;dr no
