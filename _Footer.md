@@ -1,4 +1,5 @@
-### 帮助完善本 Wiki
+### MJS+ Wiki
 
-[请从本仓库建立 Fork 并提交 Pull request](https://github.com/MajsoulPlus/majsoul-plus-wiki)
+[Original here](https://github.com/MajsoulPlus/majsoul-plus-wiki)
+[/mjg/ repo here](https://repo.riichi.moe/)
 
