@@ -1,23 +1,23 @@
 # Settings
 
-Enter the settings from the left panel. The 
+Enter the settings from the left panel. Press the floppy-disk button to save the changes
 
-### 选项详细说明
+### Detailed options
 
-- 资源管理器缩放: 网页放大/缩小的倍数，如 1 为不放大也不缩小，0.5 为缩小到 50%，2 为放大到 200%
-
-- 渲染比率: 通过设置 `Web View` 尺寸，实现类似于缩减或扩大像素采样的效果，渲染一个更大或更小的网页再缩放到原大小以改进画面或改进图形效率
-- 使用 Kiosk 模式代替默认全屏幕模式: Kiosk 模式是为嵌入式系统设计的模式，与无边框全屏模式的区别是不可手动退出且强行置顶
-- 使用无边框窗口进入游戏: 去除上方的标题栏，可以通过 `Alt+F4` 关闭游戏
-- 退出游戏后回到管理器界面: 启动游戏时隐藏（而非关闭）管理器页面，关闭游戏时重新显示
-- 获取浏览版更新: 获取更新 (但可能有 BUG) 的先行版
-- 关闭 GPU 硬件加速: 完全使用 CPU 渲染，不推荐开启，仅当 GPU 加速有问题时使用
-- 启用进程内 GPU 处理: `Chromium` 的 GPU 进程默认与渲染进程分离，关闭 GPU 硬件加速且禁用进程内 GPU 可能导致 OBS 采集失效（该选项默认启用，当前仅在 Windows 以及 macOS 中生效）（未来修改默认值后， Linux 用户若遇到启用此选项后崩溃问题，请安装 `libgl1-mesa-dri`库，命令: `apt install --no-install-recommends libgl1-mesa-dri`）
-- 使用 AppData 存储扩展资源: 将模组、插件、工具等存储到 AppData 下（如 Windows 的存储路径在 `%APPDATA%/Majsoul Plus`）
-
-### 注：
-
-- 对模组和插件的开关会在启动游戏时被保存，若修改模组和插件的开关状态后直接关闭管理器，此更改将不会生效
-
-- 资源缓存可以在关于页面点击清除（无特殊需求不必清除资源缓存，这会拖慢你的下一次加载），未启动过游戏时清除资源缓存或连续清除两次会报错，虽然你看不到报错（逃
+#### Core
+- Disable GPU acceleration: not recommended, toggle if you have problems with GPU acceleration
+- Ignore WebGL GPU Blacklist: 
+- Enable GPU in-process (Windows/macOS): turning off the GPU hardware acceleration and disabling processes within the GPU may cause the problems with OBS acquisition. This option is enabled by default, and currently affects only Windows and macOS. For Linux users: if you have crash problems, try to install `libgl1-mesa-dri`, with the command: `apt install --no-install-recommends libgl1-mesa-dri`
+- Proxy Server address
+#### Update
+- Get pre-releases: notify when pre-releases are published
+#### User Data
+- Server to play: 0 China, 1 Japan, 2 EN
+- Use http server: if you have certificate errors
+#### Window
+- Use Kiosk mode instead of native full-screen mode: start MJS+ with kiosk mode
+- Re-open the launcher when the game closes
+- Launch game with borderless window: removes the title bar, press Alt+F4 to close the game
+- Render scale: reduce to improve fps and get blurry pics, increase to improve quality (max and default is 100%)
+- Zoom scale: the page enlargement/reduction ratio. 1 is not enlarged nor reduced, the 0.5 is reduced to 50%, 2 is enlarged to 200%
 
