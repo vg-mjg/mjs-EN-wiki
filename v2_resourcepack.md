@@ -1,16 +1,12 @@
-# 创建资源包（Resource Pack）
+# Resource Pack
 
-在 `2.x` 版本的 雀魂 Plus 中，加入了资源包的设定，以取代原本的模组。资源包是原本模组的实质意义，并且在 `1.x` 模组的基础上增加了一些功能，以更方便素材的更改。
+For an overview, read this article. For more details, check [here](v2_resourcepack_advanced).
 
-下面将**简单**介绍资源包的格式与规范，进阶的概念和内容请参考[进阶篇](v2_resourcepack_advanced)。
+Resource packs replace files in the `static/v0.5.1.w` folders with user-chosen ones.
 
-## 资源路径（resource domain）
+## Format
 
-每个资源包都需要有一个唯一的资源路径。类似雀魂官方的 `v0.5.1.w`。在实际寻找资源时，雀魂 Plus 会替换原有的资源路径，以达到替换素材的目的。
-
-## 目录格式
-
-雀魂 Plus 资源包的目录格式如下所示：
+Resource pack format is shown below：
 
 ```
 - resource_pack_name
@@ -21,25 +17,25 @@
     - fileA.png
 ```
 
-其中，resource_pack.json 负责描述该资源包的信息，而 `assets` 目录下负责存储该资源包对应资源路径的实际内容。
+resource_pack.json describes the mod, while `assets` folder contains the new files.
 
 ## resource_pack.json
 
-下面给出一个资源包的 `resource_pack.json` 的样例：
+Here is a sample of a `resource_pack.json`：
 
 ```jsonc
 {
-  // 以下为 metadata
-  "id": "sample", // 必填项
-  "version": "1.0.0", // 必填项
-  "name": "sample_pack", // 选填项
-  "author": "Majsoul Plus Team", // 选填项
-  "description": "This is a sample resource pack.", // 选填项
-  "preview": "preview.png", // 选填项
+  // metadata
+  "id": "sample", // folder name
+  "version": "1.0.0", // version
+  "name": "sample_pack", // mod name
+  "author": "Majsoul Plus Team", // author
+  "description": "This is a sample resource pack.", // description
+  "preview": "preview.png", // preview image
 
-  // 以下为资源包特有
+  // dependency, if needed
   "dependencies": {
-    "majsoul_plus": "^2.0.0" // 不建议使用，尚未完善
+    "majsoul_plus": "^2.0.0" // form 2.0.0 and up
   },
   "replace": [
     "audio/sound/zeniya/fan_dora10.mp3",
@@ -58,6 +54,6 @@
 }
 ```
 
-## 可以执行的脚本呢？
+## What about scripts？
 
-由于功能调整，雀魂 Plus 中的资源包目前只能起到替换资源的作用。想要实现更强大的功能，请参考[扩展](v2_extension)。
+Resourcepacks can't run javascript. That functionality is implemented in [extensions](v2_extension)。
