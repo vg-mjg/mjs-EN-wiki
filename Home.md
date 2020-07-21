@@ -1,69 +1,61 @@
-# 雀魂 Plus
+# Majsoul Plus
 
-一款用于「雀魂」的可扩展专用 PC 浏览器
+A dedicated Mahjong Soul PC browser.
 
-## 请注意
+## Note
 
-本 Wiki 大量内容属于 雀魂 Plus v1.x 版本使用，雀魂 Plus v1.x 现已停止维护，请您参考 雀魂 Plus v2.x 相关资料制作您的扩展。
+This wiki contains lots of contents referring to MJS+ v1.x (not in development anymore), refer to MJS+ v2.x pages for extension-related contents.
 
 ## 简介
 
-雀魂 Plus 基于 Electron 开发，是一款开源的、跨平台的「雀魂」浏览器。雀魂 Plus 的浏览行为会模拟 Electron 对应版本 Chrome 浏览器行为，但同时会提供 'MajsoulPlus' UA 字段，雀魂 Plus 原则上并不提供影响浏览器与服务器通信的功能。在基本功能外，雀魂 Plus 支持安装各类插件和缓存模组来提供扩展功能以及缓存替换。
+MJS+, based on Electron, is an open source, cross-platform browser for Mahjong Soul game. The browsing behaviour of Electron is the same as Chrome's. Basic functions include the support of various plug-ins and local cache.
 
-## 基本功能
 
-- 「雀魂」专用浏览器，内置缓存机制可有效提升游戏加载速度
-- 支持设置渲染比率实现超采样抗锯齿，并可保存原画分辨率截图
-- 支持多开，您可以同时开启多个浏览器，每个都是独立的小号窗口
-- 适配 OBS 等视频采集工具，方便录制您的精彩时刻
-- 界面多语言支持（实现中），提供 English、简体中文、正體中文（台灣）、繁體中文（香港）、日本語 的支持
+## Basic functions
 
-## 扩展资源支持
+- MJS dedicated browser, built-in cache may increase the loading speed
+- Support for setting the rendering rate to achieve anti-aliasing, and save original resolution screenshots
+- You can open multiple windows
+- Easy capture with OBS and other video capture tools
+- Multi-language interface implementations  (English, Simplified Chinese, Traditional Chinese Taiwan, traditional Chinese, Hong Kong, Japan languages)
 
-雀魂 Plus 支持`*.mspm`、`*.mspe`、`*.mspt` 格式的专用扩展资源，可提供缓存替换、游戏插件以及雀魂 Plus 工具支持。
-以下是版本 v1.12.0 内置的所有扩展资源。
+## Modding support
 
-请注意，以下扩展并不是全部由雀魂 Plus 开发组开发的
+MJS+ supports `*.mspm`、`*.mspe`、`*.mspt` format-specific extensions.
+Following are the default v1.12.0 mods.
 
-| 名称             | 描述                                                                                                                                                                                                                                                                                |
+| Name             | Description                                                                                                                                                                                                                                                                                |
 | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 千织改绿头鸭模组 | 图像来源于 [Pixabay](https://pixabay.com/zh/%E9%B8%AD-%E7%BB%BF%E5%A4%B4%E9%B8%AD-%E6%B0%B4%E7%A6%BD-%E9%B8%AD%E9%B8%9F-%E5%AE%B6%E7%A6%BD-%E6%9D%A1%E4%BE%8B%E8%8D%89%E6%A1%88-%E5%8A%A8%E7%89%A9-%E6%80%A7%E8%B4%A8-%E5%86%AC%E5%A4%A9-3848090/) ，由 Capri23auto 上传， CC0 协议 |
-| 解锁所有语音     | 可以用于您解锁报番语音等语音，让您享受完整的麻将游戏体验                                                                                                                                                                                                                            |
-| 解除实名认证     | 为海外玩家或是没有中国身份证号码的玩家解除实名认证以正常游戏                                                                                                                                                                                                                        |
-| 桌布制作工具     | 简单的桌布制作工具，可以快速生成桌布图像                                                                                                                                                                                                                                            |
+| Chiori-duck | Replaces Chiori with a duck |
+| Unlock voices     | Unlocks all voices for all characters (SP not yet supported)                                                                                                                                                                                                                        |
+| Fake ID     | Removes the need of a chinese ID card number                                                                                                                                                                                                                    |
+| Tablecloth tool     | Produces tablecloths from .png                                                                                                                                                                                                                                            |
 
-## 下载与更新
+## Download and update
 
-### 下载
+### Download
 
-#### 直接获取最新版压缩文档
+#### Latest release
 
 - [Github Release](https://github.com/MajsoulPlus/majsoul-plus-client/releases)
 
-#### 社区维护源
+#### Community alternative sources
 
-| 平台                  | 维护者                                                                       | 安装命令                                                               |
+| Platform                  | maintainer                                                                       | Install command                                                               |
 | --------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | Homebrew Cask / macOS | [@CaptainYukinoshitaHachiman](https://github.com/CaptainYukinoshitaHachiman) | `brew cask install majsoul-plus`                                       |
-| Arch User Repository  | [@BruceZhang1993](https://github.com/BruceZhang1993)                         | [参考 AUR 发布页](https://aur.archlinux.org/packages/majsoul-plus) |
+| Arch User Repository  | [@BruceZhang1993](https://github.com/BruceZhang1993)                         | [AUR](https://aur.archlinux.org/packages/majsoul-plus) |
 
-### 自动更新
+### Update
 
-雀魂 Plus 浏览器内置了一个基础的自动更新检查，会在可用情况下尝试从 Github 自动获取最新发布版本并提醒更新，您可以在「设置」-「更新」中设置您要获取的版本发布类型。
-
-雀魂 Plus 由于会尝试从 Github 服务器读取更新信息和下载资源，在中国大陆可能会因为不可抗力无法正常下载更新补丁，您可以重新下载完整浏览器进行覆盖安装。
-
-雀魂 Plus 由于各种原因，当前版本不会尝试自动更新，您需要手动访问新版发布页面进行下载和安装操作，还请见谅。
+MJS+ includes an automatic update check. You can enable the release type in "Settings"->"Update".
+To update you can redownload from GitHub and overwrite the folder.
 
 ## 快速上手
 
-您可以阅读这篇文章[快速上手](https://github.com/MajsoulPlus/majsoul-plus-client/wiki/QuickStart)
+Read this to [get started](https://github.com/watterle/mjs-EN-wiki/wiki/QuickStart)
 
-## 扩展阅读
+## Other readings
 
-- [快捷键](https://github.com/MajsoulPlus/majsoul-plus-client/wiki/Shortcuts)
-- [常见问题](https://github.com/MajsoulPlus/majsoul-plus-client/wiki/FAQ)
-
-## 关于 Wiki
-
-本 Wiki 的构建大量参考了 [poi](https://github.com/poooi/poi/wiki) 的 Wiki， poi 项目遵循 MIT 协议，请悉知
+- [Shortcuts](https://github.com/MajsoulPlus/majsoul-plus-client/wiki/Shortcuts)
+- [FAQ](https://github.com/MajsoulPlus/majsoul-plus-client/wiki/FAQ)
