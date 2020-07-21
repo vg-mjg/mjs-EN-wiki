@@ -1,6 +1,6 @@
-# 设置项
+# Settings
 
-点击左侧菜单中可进入设置项，进入后点击上方的软盘图标可手动保存设置
+Enter the settings from the left panel. The 
 
 ### 选项详细说明
 
