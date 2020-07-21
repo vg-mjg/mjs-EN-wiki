@@ -1,32 +1,31 @@
-# 常见问题
+# FAQ
 
-## 雀魂 Plus 为什么安装扩展失败？
+## Why did a mod installation fail？
 
-1. 请确保您要安装的扩展是以下格式之一`*.mspm`、`*.mspe`、`*.mspt`；
-2. 请确保您要安装的扩展内的文件名不包含非英文字符；
-3. 请检查您是否将扩展资源放置到了一个过长的路径下。
+1. Check the file extension is one of `*.mspm`、`*.mspe`、`*.mspt`
+2. Check there are only english characters in the name
+3. Check that name isn't too long
 
-## 使用雀魂 Plus 是否会被封号？
+## Will I get banned using MJS+？
 
-雀魂 Plus 原则上不会修改和服务器的通信过程，但是会通知服务器浏览器信息，雀魂 Plus 无法保证您不会因使用该浏览器而被处罚。
+In principle it's no different from using any browser and there's no modification in the communication with MJS servers,
+thought it is no guarantee that Yostar won't ban you. 
 
-## 为什么缓存文件夹没有缓存 xx ？
+## Why is the cache folder xx ？
 
-雀魂 Plus 缓存是根据您的游戏所需文件情况进行缓存操作的，所以在您尚不需要特定资源或是该资源是以动态形式请求的情况下，不会构建缓存。
+Cache is built on your requests to the server, so if you don't need some resource it won't build up.
 
-## 为什么没有自动保存账号？
+## Why doesn't MJS+ save the login informations？
+MJS+ will automatically build a proxy server to facilitate the loading of the local cache. By default the 8887 port is used as the proxy server port. If it's occupied it will use another port, but you will lose automatic login.
+If login info aren't saved, prevent other softwares from using 8887 port.
 
-雀魂 Plus 会自动建立一个代理服务器以方便加载本地缓存，默认会使用 8887 端口作为代理服务器端口；
+## Black screen？
 
-如果有其他软件占用了这个端口，雀魂 Plus 会自动寻找其他可用端口，不同端口之间的账号信息不通用，如果您的 8887 端口长期处于被占用的情况下便不会保存账号。
+1. Confirm your internet connection；
+2. If you can play from other browsers, report an [issue](https://github.com/MajsoulPlus/majsoul-plus-client/issues/new/choose)
 
-## 游戏怎么黑屏了？
+## Why does MJS+ uses so much CPU and memory？
 
-1. 请确认您的网络连接情况，请确保在管理器界面能够获取到稳定延迟信息；
-2. 如果您使用其他浏览器可以正常打开游戏，请您[提出 issue](https://github.com/MajsoulPlus/majsoul-plus-client/issues/new/choose) 进行反馈。
-
-## 雀魂 Plus 内存和 CPU 占用怎么这么大？
-
-1. 雀魂麻将使用 Laya 引擎制作，会造成较大系统负载；
-2. 您启用的每个插件和模组均会占用部分内存和 CPU 资源；
-3. Electron 内核会根据您的计算机配置动态申请更多资源来保证运行速度，当资源不足时会自动释放。
+1. MJS uses Laya engine, that produces a big system load；
+2. Plugins will occupy some RAM and CPU resources；
+3. Electron kernel dynamically requests many resources to ensure a working speed. (??)
