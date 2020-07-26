@@ -20,4 +20,4 @@ export interface Extension extends Metadata {
 | resourcepack   | `Array<string ResourcePackReplaceEntry>` | `[]`        | Replaces files like a resourcepack      |
 
 ## Node compatible？
-tl;dr no
+?
